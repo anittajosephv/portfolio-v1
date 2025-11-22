@@ -27,8 +27,7 @@
       </div>
     </header>
 
-    <!-- MAIN CONTENT -->
-    <main>
+    <main role="main">
       <!-- HERO SECTION -->
       <section id="hero">
         <h1>Hi, I am Anitta Joseph</h1>
@@ -78,13 +77,13 @@
       <section id="projects">
         <h2>Projects</h2>
 
-        <!-- Optional audio demo -->
+        <!-- Audio demo -->
         <audio aria-label="Project 1 demo audio" controls>
           <source src="src/assets/demo-audio.mp3" type="audio/mpeg" />
           Your browser does not support the audio element.
         </audio>
 
-        <!-- Project 1 -->
+        <!-- Project articles -->
         <article>
           <h3>Project 1</h3>
           <figure>
@@ -97,7 +96,6 @@
           </video>
         </article>
 
-        <!-- Project 2 -->
         <article>
           <h3>Project 2</h3>
           <img
@@ -108,7 +106,6 @@
           <p>Short description of Project 2.</p>
         </article>
 
-        <!-- Project 3 -->
         <article>
           <h3>Project 3</h3>
           <img
@@ -119,7 +116,7 @@
           <p>Short description of Project 3.</p>
         </article>
 
-        <!-- Project Table -->
+        <!-- Project table -->
         <table>
           <caption>
             My Projects Overview
@@ -194,6 +191,7 @@
             required
             minlength="10"
           ></textarea>
+
           <label for="website">Your Website</label>
           <input
             type="url"
@@ -212,13 +210,13 @@
             <option value="collaboration">Collaboration</option>
             <option value="feedback">Feedback</option>
           </select>
-          <br />
+
           <fieldset>
             <legend>Subscribe to newsletter</legend>
-            <label>
-              <input type="checkbox" name="newsletter" value="yes" />
-              Yes, I want to subscribe
-            </label>
+            <label
+              ><input type="checkbox" name="newsletter" value="yes" /> Yes, I
+              want to subscribe</label
+            >
           </fieldset>
 
           <button type="submit">Send Message</button>
