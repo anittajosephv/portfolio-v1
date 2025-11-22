@@ -153,6 +153,23 @@ fieldset {
 legend {
   font-weight: 600;
 }
+/* Hero Image */
+#hero img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 8px;
+}
+
+/* Audio & Video */
+audio,
+video {
+  display: block;
+  margin: 1rem auto;
+  max-width: 100%;
+  border-radius: 8px;
+}
 
 button {
   margin-top: 1rem;

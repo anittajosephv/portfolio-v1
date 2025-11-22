@@ -36,6 +36,16 @@
           Welcome to my portfolio website where I showcase my skills and
           projects as an aspiring Fullstack Developer.
         </p>
+        <img
+          src="src/assets/hero-large.jpg"
+          srcset="
+            src/assets/hero-small.jpg   480w,
+            src/assets/hero-medium.jpg  768w,
+            src/assets/hero-large.jpg  1200w
+          "
+          sizes="(max-width: 768px) 100vw, 50vw"
+          alt="Anitta Joseph working on web development"
+        />
       </section>
 
       <!-- ABOUT SECTION -->
@@ -67,6 +77,14 @@
       <!-- PROJECTS SECTION -->
       <section id="projects">
         <h2>Projects</h2>
+
+        <!-- Optional audio demo -->
+        <audio aria-label="Project 1 demo audio" controls>
+          <source src="src/assets/demo-audio.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+
+        <!-- Project 1 -->
         <article>
           <h3>Project 1</h3>
           <img
@@ -74,8 +92,14 @@
             alt="Screenshot of Project 1"
             width="300"
           />
+          <video controls width="600" poster="src/assets/project1-poster.png">
+            <source src="src/assets/project1-demo.mp4" type="video/mp4" />
+            Your browser does not support the video element.
+          </video>
           <p>Short description of Project 1.</p>
         </article>
+
+        <!-- Project 2 -->
         <article>
           <h3>Project 2</h3>
           <img
@@ -85,6 +109,8 @@
           />
           <p>Short description of Project 2.</p>
         </article>
+
+        <!-- Project 3 -->
         <article>
           <h3>Project 3</h3>
           <img
@@ -95,7 +121,7 @@
           <p>Short description of Project 3.</p>
         </article>
 
-        <!-- PROJECT TABLE -->
+        <!-- Project Table -->
         <table>
           <caption>
             My Projects Overview
