@@ -87,16 +87,14 @@
         <!-- Project 1 -->
         <article>
           <h3>Project 1</h3>
-          <img
-            src="src/assets/project1.png"
-            alt="Screenshot of Project 1"
-            width="300"
-          />
+          <figure>
+            <img src="src/assets/project1.png" alt="Screenshot of Project 1" />
+            <figcaption>Screenshot of Project 1 demo</figcaption>
+          </figure>
           <video controls width="600" poster="src/assets/project1-poster.png">
             <source src="src/assets/project1-demo.mp4" type="video/mp4" />
             Your browser does not support the video element.
           </video>
-          <p>Short description of Project 1.</p>
         </article>
 
         <!-- Project 2 -->
@@ -128,24 +126,24 @@
           </caption>
           <thead>
             <tr>
-              <th>Project</th>
-              <th>Technology</th>
-              <th>Link</th>
+              <th scope="col">Project</th>
+              <th scope="col">Technology</th>
+              <th scope="col">Link</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Project 1</td>
+              <th scope="row">Project 1</th>
               <td>HTML, CSS</td>
               <td><a href="#">Live Demo</a></td>
             </tr>
             <tr>
-              <td>Project 2</td>
+              <th scope="row">Project 2</th>
               <td>HTML, CSS, JS</td>
               <td><a href="#">Live Demo</a></td>
             </tr>
             <tr>
-              <td>Project 3</td>
+              <th scope="row">Project 3</th>
               <td>HTML, CSS, JS</td>
               <td><a href="#">Live Demo</a></td>
             </tr>
@@ -165,6 +163,7 @@
             placeholder="Your full name"
             required
             minlength="3"
+            aria-required="true"
           />
 
           <label for="email">Email Address</label>
@@ -174,6 +173,7 @@
             name="email"
             placeholder="Your email"
             required
+            aria-required="true"
           />
 
           <label for="subject">Subject</label>
@@ -183,6 +183,7 @@
             name="subject"
             placeholder="Subject of your message"
             required
+            aria-required="true"
           />
 
           <label for="message">Message</label>
@@ -193,7 +194,25 @@
             required
             minlength="10"
           ></textarea>
+          <label for="website">Your Website</label>
+          <input
+            type="url"
+            id="website"
+            name="website"
+            placeholder="https://example.com"
+          />
 
+          <label for="rating">Rate this portfolio (1-5)</label>
+          <input type="number" id="rating" name="rating" min="1" max="5" />
+
+          <label for="inquiry">Inquiry Type</label>
+          <select id="inquiry" name="inquiry" required>
+            <option value="">Select</option>
+            <option value="job">Job Opportunity</option>
+            <option value="collaboration">Collaboration</option>
+            <option value="feedback">Feedback</option>
+          </select>
+          <br />
           <fieldset>
             <legend>Subscribe to newsletter</legend>
             <label>
