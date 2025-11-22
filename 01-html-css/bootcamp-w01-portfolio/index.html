@@ -7,15 +7,16 @@
     <link rel="stylesheet" href="src/css/main.css" />
   </head>
   <body>
-    <!-- HEADER & NAVIGATION -->
+    <!-- HEADER -->
     <header>
-      <div class="container">
+      <div class="container header-container">
         <a href="#hero">
           <img
             src="src/assets/logo.svg"
             alt="Anitta Joseph Logo"
             class="logo"
             width="50"
+            height="50"
           />
         </a>
         <nav>
@@ -27,203 +28,131 @@
       </div>
     </header>
 
-    <main role="main">
-      <!-- HERO SECTION -->
-      <section id="hero">
+    <!-- HERO SECTION -->
+    <section id="hero">
+      <div class="hero-content">
         <h1>Hi, I am Anitta Joseph</h1>
         <p>
-          Welcome to my portfolio website where I showcase my skills and
-          projects as an aspiring Fullstack Developer.
+          Welcome to my portfolio showcasing my skills and projects as an
+          aspiring Fullstack Developer.
         </p>
+        <a href="#projects" class="cta-btn">View Projects</a>
+      </div>
+      <img
+        src="src/assets/hero-large.jpg"
+        alt="Anitta Joseph working on web development"
+        class="hero-img"
+      />
+    </section>
+    <!-- <section id="hero">
+      <div class="hero-container">
         <img
           src="src/assets/hero-large.jpg"
-          srcset="
-            src/assets/hero-small.jpg   480w,
-            src/assets/hero-medium.jpg  768w,
-            src/assets/hero-large.jpg  1200w
-          "
-          sizes="(max-width: 768px) 100vw, 50vw"
           alt="Anitta Joseph working on web development"
+          class="hero-img"
         />
-      </section>
+        <div class="hero-content">
+          <h1>Hi, I am Anitta Joseph</h1>
+          <p>
+            Welcome to my portfolio showcasing my skills and projects as an
+            aspiring Fullstack Developer.
+          </p>
+          <a href="#projects" class="cta-btn">View Projects</a>
+        </div>
+      </div>
+    </section> -->
 
-      <!-- ABOUT SECTION -->
-      <section id="about">
-        <h2>About Me</h2>
+    <!-- ABOUT SECTION -->
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="about-container">
         <p>
-          Hello! I am Anitta Joseph, a beginner in web development, aiming to
+          Hello! I am Anitta Joseph, a beginner in web development aiming to
           become a professional Fullstack Developer. I am learning HTML, CSS,
           JavaScript, React, and more.
         </p>
         <p>
-          In this portfolio, I will demonstrate my projects, skills, and
-          learning journey in IT.
+          This portfolio demonstrates my projects, skills, and learning journey
+          in IT.
         </p>
-      </section>
+      </div>
+    </section>
 
-      <!-- SKILLS SECTION -->
-      <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-          <li>HTML5 & Semantic Tags</li>
-          <li>CSS3 & Flexbox</li>
-          <li>JavaScript Basics</li>
-          <li>React & ReactJS</li>
-          <li>Next.js & Tailwind CSS</li>
-        </ul>
-      </section>
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <span class="skill">HTML5</span>
+        <span class="skill">CSS3</span>
+        <span class="skill">Flexbox</span>
+        <span class="skill">Grid</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">React</span>
+        <span class="skill">Next.js</span>
+        <span class="skill">Tailwind CSS</span>
+      </div>
+    </section>
 
-      <!-- PROJECTS SECTION -->
-      <section id="projects">
-        <h2>Projects</h2>
-
-        <!-- Audio demo -->
-        <audio aria-label="Project 1 demo audio" controls>
-          <source src="src/assets/demo-audio.mp3" type="audio/mpeg" />
-          Your browser does not support the audio element.
-        </audio>
-
-        <!-- Project articles -->
-        <article>
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <img src="src/assets/project1.png" alt="Project 1 Screenshot" />
           <h3>Project 1</h3>
-          <figure>
-            <img src="src/assets/project1.png" alt="Screenshot of Project 1" />
-            <figcaption>Screenshot of Project 1 demo</figcaption>
-          </figure>
-          <video controls width="600" poster="src/assets/project1-poster.png">
-            <source src="src/assets/project1-demo.mp4" type="video/mp4" />
-            Your browser does not support the video element.
-          </video>
+          <p>Short description of Project 1.</p>
+          <a href="#" class="project-link">Live Demo</a>
         </article>
-
-        <article>
+        <article class="project-card">
+          <img src="src/assets/project2.png" alt="Project 2 Screenshot" />
           <h3>Project 2</h3>
-          <img
-            src="src/assets/project2.png"
-            alt="Screenshot of Project 2"
-            width="300"
-          />
           <p>Short description of Project 2.</p>
+          <a href="#" class="project-link">Live Demo</a>
         </article>
-
-        <article>
+        <article class="project-card">
+          <img src="src/assets/project3.png" alt="Project 3 Screenshot" />
           <h3>Project 3</h3>
-          <img
-            src="src/assets/project3.png"
-            alt="Screenshot of Project 3"
-            width="300"
-          />
           <p>Short description of Project 3.</p>
+          <a href="#" class="project-link">Live Demo</a>
         </article>
+      </div>
+    </section>
 
-        <!-- Project table -->
-        <table>
-          <caption>
-            My Projects Overview
-          </caption>
-          <thead>
-            <tr>
-              <th scope="col">Project</th>
-              <th scope="col">Technology</th>
-              <th scope="col">Link</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">Project 1</th>
-              <td>HTML, CSS</td>
-              <td><a href="#">Live Demo</a></td>
-            </tr>
-            <tr>
-              <th scope="row">Project 2</th>
-              <td>HTML, CSS, JS</td>
-              <td><a href="#">Live Demo</a></td>
-            </tr>
-            <tr>
-              <th scope="row">Project 3</th>
-              <td>HTML, CSS, JS</td>
-              <td><a href="#">Live Demo</a></td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form action="#" method="POST" class="contact-form">
+        <label for="name">Full Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your full name"
+          required
+          minlength="3"
+        />
 
-      <!-- CONTACT FORM SECTION -->
-      <section id="contact">
-        <h2>Contact Me</h2>
-        <form action="#" method="POST" novalidate>
-          <label for="name">Full Name</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Your full name"
-            required
-            minlength="3"
-            aria-required="true"
-          />
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your email"
+          required
+        />
 
-          <label for="email">Email Address</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Your email"
-            required
-            aria-required="true"
-          />
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Write your message"
+          required
+          minlength="10"
+        ></textarea>
 
-          <label for="subject">Subject</label>
-          <input
-            type="text"
-            id="subject"
-            name="subject"
-            placeholder="Subject of your message"
-            required
-            aria-required="true"
-          />
-
-          <label for="message">Message</label>
-          <textarea
-            id="message"
-            name="message"
-            placeholder="Write your message here"
-            required
-            minlength="10"
-          ></textarea>
-
-          <label for="website">Your Website</label>
-          <input
-            type="url"
-            id="website"
-            name="website"
-            placeholder="https://example.com"
-          />
-
-          <label for="rating">Rate this portfolio (1-5)</label>
-          <input type="number" id="rating" name="rating" min="1" max="5" />
-
-          <label for="inquiry">Inquiry Type</label>
-          <select id="inquiry" name="inquiry" required>
-            <option value="">Select</option>
-            <option value="job">Job Opportunity</option>
-            <option value="collaboration">Collaboration</option>
-            <option value="feedback">Feedback</option>
-          </select>
-
-          <fieldset>
-            <legend>Subscribe to newsletter</legend>
-            <label
-              ><input type="checkbox" name="newsletter" value="yes" /> Yes, I
-              want to subscribe</label
-            >
-          </fieldset>
-
-          <button type="submit">Send Message</button>
-          <button type="reset">Reset Form</button>
-        </form>
-      </section>
-    </main>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
 
     <!-- FOOTER -->
     <footer>
