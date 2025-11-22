@@ -130,34 +130,54 @@
       <!-- CONTACT FORM SECTION -->
       <section id="contact">
         <h2>Contact Me</h2>
-        <form action="#" novalidate>
-          <label for="name">Name</label>
+        <form action="#" method="POST" novalidate>
+          <label for="name">Full Name</label>
           <input
             type="text"
             id="name"
             name="name"
+            placeholder="Your full name"
             required
-            placeholder="Your name"
+            minlength="3"
           />
 
-          <label for="email">Email</label>
+          <label for="email">Email Address</label>
           <input
             type="email"
             id="email"
             name="email"
-            required
             placeholder="Your email"
+            required
+          />
+
+          <label for="subject">Subject</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="Subject of your message"
+            required
           />
 
           <label for="message">Message</label>
           <textarea
             id="message"
             name="message"
+            placeholder="Write your message here"
             required
-            placeholder="Your message"
+            minlength="10"
           ></textarea>
 
-          <button type="submit">Send</button>
+          <fieldset>
+            <legend>Subscribe to newsletter</legend>
+            <label>
+              <input type="checkbox" name="newsletter" value="yes" />
+              Yes, I want to subscribe
+            </label>
+          </fieldset>
+
+          <button type="submit">Send Message</button>
+          <button type="reset">Reset Form</button>
         </form>
       </section>
     </main>
